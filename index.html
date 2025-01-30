@@ -1,11 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <p>Hello World</p>
+
+<body class="font-sora">
+    <!-- Header Section -->
+    <!-- Nab Bar -->
+    <div class="navbar bg-[#FFF9F4] lg:px-[140px] border-b-2">
+        <div class="navbar-start flex justify-between w-full flex-row-reverse lg:flex-row lg:justify-start lg:w-[35%]">
+            <div class="dropdown flex justify-end">
+                <!-- Hidden On Desktop Mode -->
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-md z-[1] mt-3 w-52 p-2 shadow">
+                    <li><a>Find a Pet</a></li>
+                    <li><a>Contact Us</a></li>
+                    <li><a>Breeds</a></li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-3"><img src="./assets/logo-header.png" alt="Browse$Pets">
+                <a class="text-xl text-clifford">Browse<span class="text-yellow-400">4</span>Pets</a>
+            </div>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal gap-5 text-lg cursor-pointer ">
+                <li>Find a Pet</li>
+                <li>Contact Us</li>
+                <li>Breeds</li>
+            </ul>
+        </div>
+        <div class="navbar-end hidden lg:flex">
+            <span class="mx-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+                </svg>
+            </span>
+            <span class="mx-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                </svg>
+            </span>
+            <a class="px-[36px] py-[8px] mr-3 text-[20px] border-2 border-[#FFDC26] rounded-lg cursor-pointer">Login</a>
+            <a class="px-[36px] py-[8px] mr-3 text-[20px] border-2 bg-[#FFDC26] rounded-lg cursor-pointer">Register</a>
+        </div>
+    </div>
+
+
+
+    
 </body>
+
 </html>
